@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Route;
 
-class GetRoutesCommand extends Command
+class GetPermissionsCommand extends Command
 {
     /**
      * The name and signature of the console command.
@@ -27,6 +27,6 @@ class GetRoutesCommand extends Command
     public function handle()
     {
         $routes = Route::getRoutes();
-        $this->info($routes);
+
     }
 }
